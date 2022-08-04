@@ -8,8 +8,8 @@ import org.openqa.selenium.By;
 @DefaultUrl("https://petstore.octoperf.com/actions/Catalog.action")
 public class LoginPage extends PageObject {
 
-    By BTN_SIGNIN = By.xpath("//a[@href='/actions/Account.action;jsessionid=73F19F2CB8B0F4CFB3F6321E0D4BF7A6?signonForm=']");
-    By TXT_USERNAME = By.xpath("//input[@id='stripes-1959624851']");
+    By BTN_SIGNIN = By.xpath("//*[text()='Sign In']");
+    By TXT_USERNAME = By.xpath("//input[@name='username']");
     By TXT_PASSWORD = By.xpath("//input[@name='password']");
     By BTN_LOGIN = By.xpath("//input[@name='signon']");
     By LBL_WELCOME = By.xpath("//*[@id='WelcomeContent']");

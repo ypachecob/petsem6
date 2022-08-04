@@ -16,7 +16,8 @@ public class LoginStep {
     @Step
     public void selectSignIn()
     {
-        loginHomePage.getDriver().findElements(loginHomePage.getBTN_SIGNIN()).click();
+        loginHomePage.getDriver().findElement(loginHomePage.getBTN_SIGNIN()).click();
+
     }
 
     @Step
